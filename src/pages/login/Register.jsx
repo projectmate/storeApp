@@ -3,6 +3,7 @@ import "./login.css"
 import back from "../../assets/images/my-account.jpg"
 import { Link } from "react-router-dom"
 
+
 export const Register = () => {
   return (
     <>
@@ -17,15 +18,17 @@ export const Register = () => {
           </div>
 
           <form>
-            <span>Email address</span>
+            <span>이메일 주소</span>
             <input type='text' required />
-            <span>Username * </span>
+            <span>아이디 * </span>
             <input type='text' required />
-            <span>Password * </span>
+            <span>비밀번호 * </span>
             <input type='text' required />
-            <span>Confirm Password * </span>
+            <span>비밀번호 확인 * </span>
             <input type='text' required />
-            <button className='button'>Register</button>
+            <Link to='/login'>
+          <button className='button'>등록</button>
+        </Link>
           </form>
         </div>
       </section>

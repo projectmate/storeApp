@@ -18,7 +18,7 @@ export const Login = () => {
         <div className='container'>
           <div className='backImg'>
             <img src={back} alt='' />
-           
+    
           </div>
 
           <form onSubmit={handleSubmit}>

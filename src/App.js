@@ -17,11 +17,13 @@ const App = () => {
       {isLoggIn && (
         <Router>
           <Header />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/register' component={Register} />
-            <Route exact path='/account' component={Account} />
-          </Switch>
+          <div className="app-container">
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/register' component={Register} />
+              <Route exact path='/account' component={Account} />
+            </Switch>
+          </div>
           <Footer />
         </Router>
       )}

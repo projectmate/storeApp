@@ -7,7 +7,6 @@ import { BiLogOut } from "react-icons/bi"
 import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { authActions } from "../../store/authSlice"
-import { CustomerService } from "./customersupport"
 
 export const User = () => {
   const user = true
@@ -57,9 +56,15 @@ export const User = () => {
                   <h4>찜한 상품</h4>
                 </button>  
                   <Link to='/customersupport'>
-                  <button className='box' onClick={CustomerService}>                 
+                  <button className='box'>                 
                 <GrHelp className='icon' />
                   <h4>고객센터</h4>
+                </button>
+                </Link>
+                <Link to='/signup'>
+                  <button className='box'>                 
+                <GrHelp className='icon' />
+                  <h4>회원가입</h4>
                 </button>
                 </Link>
                 <button className='box' onClick={logoutHandler}>
